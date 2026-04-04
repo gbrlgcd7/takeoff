@@ -143,13 +143,14 @@
     }
 
     function clearLine() {
-      lineFill.style.transition = `opacity ${TRAIL_FADE_MS}ms ease`;
+      lineFill.style.transition = 'opacity 250ms ease';
       lineFill.style.opacity = '0';
       setTimeout(() => {
         lineFill.style.transition = '';
-        lineFill.style.width = '0';
-        lineFill.style.left  = '0';
-      }, TRAIL_FADE_MS + 50);
+        lineFill.style.width = '0px';
+        lineFill.style.left  = '0px';
+        lineFill.style.opacity = '';
+      }, 300);
     }
 
     function activateStep(idx, on) {
