@@ -679,6 +679,19 @@ section { padding: 120px 0; }
 
   /* Btn: allow wrapping on very small screens */
   .btn { white-space: normal; text-align: center; }
+
+  /* Flow mobile — alinhamento à esquerda */
+  .flow-m-step { align-items: flex-start; padding-left: 8px; }
+  .flow-m-info .flow-step-name { text-align: left; }
+
+  /* Process sticky stacking — restore on mobile (900px breakpoint disabled it) */
+  .proc-step-sticky {
+    position: sticky;
+    top: 68px;
+    min-height: 100vh;
+    align-items: flex-start;
+  }
+  .proc-step-inner { padding: 36px 0 48px; }
 }
 
 @media (max-width: 480px) {
