@@ -1416,14 +1416,21 @@ img.port-screen { padding: 0; width: 100%; height: auto; display: block; }
 
 /* ── Demo animation: mobile responsive ──────────────────────────────── */
 @media (max-width: 768px) {
-  .demo-wrap            { min-height: 240px; }
-  .demo-wrap.phone-active { min-height: 320px; }
+  .demo-wrap            { min-height: 240px; flex-direction: column; min-height: auto !important; }
+  .demo-wrap.phone-active { min-height: auto !important; }
   .demo-phone-body {
     max-width: 180px;
     box-shadow: 0 0 0 1px #444, 0 0 0 2px #111, 0 16px 32px rgba(0,0,0,.5);
   }
   .demo-wa-chat           { min-height: 100px; }
   .proc-step-visual.proc-step-visual-active { padding: 24px 16px; }
+  .demo-phone {
+    position: relative !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+  .demo-screen { display: none; }
 }
 
 @media (max-width: 480px) {
