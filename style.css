@@ -1383,51 +1383,51 @@ img.port-screen { padding: 0; width: 100%; height: auto; display: block; }
   0%   { left: -60px; opacity: 1; }
   100% { left: calc(100% + 60px); opacity: 1; }
 }
-/* ===== FIX MOBILE WHATSAPP MOCK ===== */
+
+ /* ===== MOBILE FINAL FIX (SEM QUEBRAR NADA) ===== */
 
 @media (max-width: 768px) {
 
-  /* aumenta levemente o tamanho do celular */
   .iphone-mock {
-    max-width: 260px;
+    max-width: 240px;
+    margin: 0 auto;
   }
 
-  /* garante que o conteúdo escale junto */
+  /* REMOVE qualquer scale no mobile */
   .iphone-inner {
-    transform: scale(0.85);
-    transform-origin: top center;
+    transform: none;
   }
 
-  /* impede estouro lateral */
-  .iphone-inner * {
-    max-width: 100%;
+  /* ajuste real vem do tamanho do container */
+  .iphone-inner {
+    height: 360px;
   }
 
-  /* corrige chat */
+  /* chat */
   .waf-chat {
-    padding: 6px;
-    gap: 6px;
+    padding: 8px;
+    gap: 8px;
   }
 
-  /* corrige mensagens */
+  /* mensagens */
   .waf-mi,
   .waf-mo {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     padding: 6px 8px;
   }
 
-  /* corrige header */
+  /* header */
   .waf-wa-hdr {
-    padding: 6px;
+    padding: 6px 8px;
   }
 
-  /* corrige input */
+  /* input */
   .waf-input-bar {
-    padding: 6px;
+    padding: 6px 8px;
   }
 
   .waf-input-field {
-    font-size: 10px;
+    font-size: 11px;
   }
 
 }
