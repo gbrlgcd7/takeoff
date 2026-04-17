@@ -613,7 +613,7 @@
 
       cursor.style.opacity = '0';
       rocket.style.opacity = '1';
-      rocket.style.transition = 'left .65s cubic-bezier(.4,0,.2,1)';
+      rocket.style.transition = 'left 1s cubic-bezier(.4,0,.2,1)';
       await sleep(30);
       rocket.style.left = 'calc(100% + 60px)';
       desktop.style.opacity = '0';
